@@ -166,7 +166,12 @@ extension CustomRowActionCell {
     }
     
     func actionButtonHandler() {
+        
         rowAction?()
+
+        DispatchQueue.main.async { [weak self] in  // enclose cell
+            self?.scrollView.setContentOffset(originalOffset, animated: true)
+        }
     }
 }
 

@@ -37,6 +37,10 @@ extension CustomRowActionViewController: UITableViewDelegate, UITableViewDataSou
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! CustomRowActionCell
         
+        cell.rowAction = {
+            self.tableView.setEditing(false, animated: true)
+        }
+        
         return cell
     }
     

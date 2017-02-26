@@ -15,6 +15,15 @@
 		C9234AB51E619A0C0050CBE1 /* CustomRowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AB41E619A0C0050CBE1 /* CustomRowAction.swift */; };
 		C9234AB71E6278CB0050CBE1 /* CustomRowActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AB61E6278CB0050CBE1 /* CustomRowActionViewController.swift */; };
 		C9234ABB1E62A0590050CBE1 /* CustomRowActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234ABA1E62A0590050CBE1 /* CustomRowActionCell.swift */; };
+		C9234AC81E6308760050CBE1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234ABF1E6308760050CBE1 /* Extensions.swift */; };
+		C9234AC91E6308760050CBE1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9234AC01E6308760050CBE1 /* Info.plist */; };
+		C9234ACA1E6308760050CBE1 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AC11E6308760050CBE1 /* Options.swift */; };
+		C9234ACB1E6308760050CBE1 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AC21E6308760050CBE1 /* SwipeAction.swift */; };
+		C9234ACC1E6308760050CBE1 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AC31E6308760050CBE1 /* SwipeActionButton.swift */; };
+		C9234ACD1E6308760050CBE1 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AC41E6308760050CBE1 /* SwipeActionsView.swift */; };
+		C9234ACE1E6308760050CBE1 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AC61E6308760050CBE1 /* SwipeTableViewCell.swift */; };
+		C9234ACF1E6308760050CBE1 /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AC71E6308760050CBE1 /* SwipeTableViewCellDelegate.swift */; };
+		C9234AD11E6308BF0050CBE1 /* SwipeCellDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9234AD01E6308BF0050CBE1 /* SwipeCellDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,16 @@
 		C9234AB41E619A0C0050CBE1 /* CustomRowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRowAction.swift; sourceTree = "<group>"; };
 		C9234AB61E6278CB0050CBE1 /* CustomRowActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRowActionViewController.swift; sourceTree = "<group>"; };
 		C9234ABA1E62A0590050CBE1 /* CustomRowActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRowActionCell.swift; sourceTree = "<group>"; };
+		C9234ABF1E6308760050CBE1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9234AC01E6308760050CBE1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9234AC11E6308760050CBE1 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		C9234AC21E6308760050CBE1 /* SwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		C9234AC31E6308760050CBE1 /* SwipeActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionButton.swift; sourceTree = "<group>"; };
+		C9234AC41E6308760050CBE1 /* SwipeActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionsView.swift; sourceTree = "<group>"; };
+		C9234AC51E6308760050CBE1 /* SwipeCellKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeCellKit.h; sourceTree = "<group>"; };
+		C9234AC61E6308760050CBE1 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTableViewCell.swift; sourceTree = "<group>"; };
+		C9234AC71E6308760050CBE1 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		C9234AD01E6308BF0050CBE1 /* SwipeCellDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCellDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,7 @@
 				C9234AA31E6148280050CBE1 /* Main.storyboard */,
 				C9234AB81E629FBC0050CBE1 /* RowActionCustom */,
 				C9234AB91E629FCF0050CBE1 /* CustomRowAction */,
+				C9234ABC1E6304820050CBE1 /* SwipeCellKit */,
 			);
 			path = CustomSwipeCell;
 			sourceTree = "<group>";
@@ -96,6 +116,31 @@
 				C9234ABA1E62A0590050CBE1 /* CustomRowActionCell.swift */,
 			);
 			name = CustomRowAction;
+			sourceTree = "<group>";
+		};
+		C9234ABC1E6304820050CBE1 /* SwipeCellKit */ = {
+			isa = PBXGroup;
+			children = (
+				C9234AD01E6308BF0050CBE1 /* SwipeCellDemoViewController.swift */,
+				C9234ABE1E6308760050CBE1 /* Source */,
+			);
+			name = SwipeCellKit;
+			sourceTree = "<group>";
+		};
+		C9234ABE1E6308760050CBE1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C9234ABF1E6308760050CBE1 /* Extensions.swift */,
+				C9234AC01E6308760050CBE1 /* Info.plist */,
+				C9234AC11E6308760050CBE1 /* Options.swift */,
+				C9234AC21E6308760050CBE1 /* SwipeAction.swift */,
+				C9234AC31E6308760050CBE1 /* SwipeActionButton.swift */,
+				C9234AC41E6308760050CBE1 /* SwipeActionsView.swift */,
+				C9234AC51E6308760050CBE1 /* SwipeCellKit.h */,
+				C9234AC61E6308760050CBE1 /* SwipeTableViewCell.swift */,
+				C9234AC71E6308760050CBE1 /* SwipeTableViewCellDelegate.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9234AC91E6308760050CBE1 /* Info.plist in Resources */,
 				C9234AAA1E6148280050CBE1 /* LaunchScreen.storyboard in Resources */,
 				C9234AA71E6148280050CBE1 /* Assets.xcassets in Resources */,
 				C9234AA51E6148280050CBE1 /* Main.storyboard in Resources */,
@@ -171,10 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9234AB31E615E640050CBE1 /* RowActionCustomViewController.swift in Sources */,
+				C9234ACE1E6308760050CBE1 /* SwipeTableViewCell.swift in Sources */,
+				C9234AC81E6308760050CBE1 /* Extensions.swift in Sources */,
+				C9234ACC1E6308760050CBE1 /* SwipeActionButton.swift in Sources */,
+				C9234ACB1E6308760050CBE1 /* SwipeAction.swift in Sources */,
 				C9234AB51E619A0C0050CBE1 /* CustomRowAction.swift in Sources */,
 				C9234ABB1E62A0590050CBE1 /* CustomRowActionCell.swift in Sources */,
 				C9234AB71E6278CB0050CBE1 /* CustomRowActionViewController.swift in Sources */,
+				C9234ACD1E6308760050CBE1 /* SwipeActionsView.swift in Sources */,
 				C9234AA01E6148280050CBE1 /* AppDelegate.swift in Sources */,
+				C9234ACF1E6308760050CBE1 /* SwipeTableViewCellDelegate.swift in Sources */,
+				C9234AD11E6308BF0050CBE1 /* SwipeCellDemoViewController.swift in Sources */,
+				C9234ACA1E6308760050CBE1 /* Options.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +388,7 @@
 				C9234AB01E6148280050CBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

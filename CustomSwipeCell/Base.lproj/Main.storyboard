@@ -76,6 +76,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hzd-pk-Nxp" kind="show" id="Z5F-Nj-7RF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -250,7 +253,7 @@ appearance.setAttributedTitle(attString, for: .normal)    </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFi-1a-a6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="-776"/>
+            <point key="canvasLocation" x="1039" y="667"/>
         </scene>
         <!--自定义 RowAction-->
         <scene sceneID="k9x-EJ-IW1">
@@ -290,7 +293,70 @@ appearance.setAttributedTitle(attString, for: .normal)    </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBB-ZJ-wdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="-74"/>
+            <point key="canvasLocation" x="1686" y="666"/>
+        </scene>
+        <!--SwipeCellKit-->
+        <scene sceneID="bpS-iI-bwh">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="hzd-pk-Nxp" customClass="SwipeCellDemoViewController" customModule="CustomSwipeCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XRL-Ic-ILe"/>
+                        <viewControllerLayoutGuide type="bottom" id="PTi-jk-eSR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Day-86-iuL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-Gy-JCH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwipeCell" rowHeight="73" id="m0R-kb-ZVM" customClass="SwipeTableViewCell" customModule="CustomSwipeCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0R-kb-ZVM" id="2Uo-5u-4xe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👈👈👈     Let's Swipe Cell        👉👉👉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8N-Y2-051">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="72.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="g8N-Y2-051" secondAttribute="bottom" id="D81-2b-UPz"/>
+                                                <constraint firstItem="g8N-Y2-051" firstAttribute="top" secondItem="2Uo-5u-4xe" secondAttribute="top" id="O1V-YC-0CI"/>
+                                                <constraint firstItem="g8N-Y2-051" firstAttribute="leading" secondItem="2Uo-5u-4xe" secondAttribute="leading" constant="15" id="O3L-wO-jFE"/>
+                                                <constraint firstAttribute="trailing" secondItem="g8N-Y2-051" secondAttribute="trailing" constant="15" id="ies-Ol-7bP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hzd-pk-Nxp" id="ftD-QI-1Tc"/>
+                                    <outlet property="delegate" destination="hzd-pk-Nxp" id="Ct1-Ui-o8F"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MLb-Gy-JCH" firstAttribute="leading" secondItem="Day-86-iuL" secondAttribute="leading" id="0tt-Mk-Yl4"/>
+                            <constraint firstItem="MLb-Gy-JCH" firstAttribute="top" secondItem="XRL-Ic-ILe" secondAttribute="bottom" id="DNV-2R-t4Y"/>
+                            <constraint firstAttribute="trailing" secondItem="MLb-Gy-JCH" secondAttribute="trailing" id="Izf-x8-OtK"/>
+                            <constraint firstItem="PTi-jk-eSR" firstAttribute="top" secondItem="MLb-Gy-JCH" secondAttribute="bottom" id="VOi-iB-rJs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SwipeCellKit" id="OAZ-VY-yX2"/>
+                    <connections>
+                        <outlet property="tableView" destination="MLb-Gy-JCH" id="ZAF-ul-ctv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYb-b0-BjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2333.5999999999999" y="664.31784107946032"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zAY-KG-ppO">
